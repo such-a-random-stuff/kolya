@@ -24,7 +24,7 @@ destination = 'docs'
 # Theme :
 # - colorbox (default), galleria, photoswipe, or the path to a custom theme
 # directory
-theme = 'galleria'
+theme = 'theme'
 
 # Author. Used in the footer of the pages and in the author meta tag.
 author = 'Roland Lem'
@@ -33,7 +33,7 @@ author = 'Roland Lem'
 # processing steps (resize, auto-orient, recompress, and any plugin-specific
 # step).
 # Originals will be symlinked if orig_link = True, else they will be copied.
-# use_orig = False
+use_orig = True
 
 # ----------------
 # Image processing (ignored if use_orig = True)
@@ -55,7 +55,7 @@ img_size = (1024, 768)
 # - ResizeToFill: crop THE IMAGE it to the exact specified width and height
 # - SmartResize: identical to ResizeToFill, but uses entropy to crop the image
 # - None: don't resize
-# img_processor = 'None'
+img_processor = 'SmartResize'
 
 # Autorotate images
 # Warning: this setting is not compatible with `copy_exif_data` (see below),
@@ -67,9 +67,9 @@ img_size = (1024, 768)
 # copy_exif_data = False
 
 # Jpeg options
-# jpg_options = {'quality': 85,
-#                'optimize': True,
-#                'progressive': True}
+jpg_options = {'quality': 80,
+               'optimize': True,
+               'progressive': True}
 
 # --------------------
 # Thumbnail generation
@@ -88,7 +88,7 @@ img_size = (1024, 768)
 # Thumbnail size (default: (200, 150))
 # For the galleria theme, use 280 px for the width
 # For the colorbox and photoswipe theme, use 200 px for the width
-thumb_size = (280, 210)
+thumb_size = (200, 150)
 
 # Crop the image to fill the box
 # thumb_fit = True
@@ -173,7 +173,7 @@ ignore_files = []
 #          ('Another link', 'http://example.org')]
 
 # Google Analytics tracking code (UA-xxxx-x)
-# google_analytics = ''
+google_analytics = 'UA-116681043-1'
 
 # Google Tag Manager tracking code (GTM-xxxxxx)
 # google_tag_manager = ''
@@ -185,7 +185,7 @@ ignore_files = []
 
 # Set zip_gallery to either False or a file name. The final archive will
 # contain all resized or original files (depending on `zip_media_format`).
-# zip_gallery = False   # False or 'archive.zip'
+zip_gallery = 'kolya.zip'   # False or 'archive.zip'
 # zip_media_format = 'resized'  # 'resized' or 'orig'
 
 # Specify a different locale. If set to '', the default locale is used.
